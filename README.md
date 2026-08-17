@@ -12,7 +12,7 @@ More information can be found at [the Common Access Model](https://include-dcc.g
 
 The latest version of the ontology can always be found at:
 
-<Release URI TBD>
+Release URI TBD
 
 ### Editors' version
 
