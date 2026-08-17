@@ -9,27 +9,58 @@ Prefix(dcterms:=<http://purl.org/dc/terms/>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/camo.owl>
-
 Import(<http://purl.obolibrary.org/obo/camo/imports/ms_import.owl>)
-
-
 Annotation(dcterms:description "Organized terms in support of a shared data model.")
 Annotation(dcterms:license <https://creativecommons.org/licenses/unspecified>)
 Annotation(dcterms:title "Common Access Model Ontology")
 
-
 Declaration(Class(<http://purl.obolibrary.org/obo/CAMO_0000000>))
+Declaration(Class(<http://purl.obolibrary.org/obo/CAMO_0000001>))
+Declaration(Class(<http://purl.obolibrary.org/obo/CAMO_0000002>))
+Declaration(Class(<http://purl.obolibrary.org/obo/CAMO_0000003>))
+Declaration(Class(<http://purl.obolibrary.org/obo/CAMO_0000004>))
+Declaration(Class(<http://purl.obolibrary.org/obo/CAMO_0000005>))
+Declaration(Class(<http://purl.obolibrary.org/obo/CAMO_0000006>))
+Declaration(Class(<http://purl.obolibrary.org/obo/CAMO_0000007>))
+Declaration(Class(<http://purl.obolibrary.org/obo/CAMO_0000008>))
+Declaration(Class(<http://purl.obolibrary.org/obo/CAMO_0000009>))
+Declaration(Class(<http://purl.obolibrary.org/obo/CAMO_0000010>))
+Declaration(Class(<http://purl.obolibrary.org/obo/CAMO_0000011>))
+Declaration(Class(<http://purl.obolibrary.org/obo/CAMO_0000012>))
+Declaration(Class(<http://purl.obolibrary.org/obo/CAMO_0000013>))
+Declaration(Class(<http://purl.obolibrary.org/obo/CAMO_0000014>))
+Declaration(Class(<http://purl.obolibrary.org/obo/CAMO_0000015>))
+Declaration(Class(<http://purl.obolibrary.org/obo/CAMO_0000016>))
+Declaration(Class(<http://purl.obolibrary.org/obo/CAMO_0000017>))
+Declaration(Class(<http://purl.obolibrary.org/obo/CAMO_0000018>))
+Declaration(Class(<http://purl.obolibrary.org/obo/CAMO_0000019>))
+Declaration(Class(<http://purl.obolibrary.org/obo/CAMO_0000020>))
+Declaration(Class(<http://purl.obolibrary.org/obo/CAMO_0000021>))
+Declaration(Class(<http://purl.obolibrary.org/obo/CAMO_0000022>))
+Declaration(Class(<http://purl.obolibrary.org/obo/MS_1000561>))
+Declaration(Class(<http://purl.obolibrary.org/obo/MS_1000568>))
+Declaration(Class(<http://purl.obolibrary.org/obo/MS_1000569>))
+Declaration(Class(<http://purl.obolibrary.org/obo/MS_1003151>))
 Declaration(AnnotationProperty(dcterms:description))
 Declaration(AnnotationProperty(dcterms:license))
 Declaration(AnnotationProperty(dcterms:title))
-
 ############################
 #   Annotation Properties
 ############################
 
+# Annotation Property: dcterms:description (description)
+
 AnnotationAssertion(rdfs:label dcterms:description "description")
+
+# Annotation Property: dcterms:license (license)
+
 AnnotationAssertion(rdfs:label dcterms:license "license")
+
+# Annotation Property: dcterms:title (title)
+
 AnnotationAssertion(rdfs:label dcterms:title "title")
+
+
 
 ############################
 #   Classes
@@ -38,6 +69,133 @@ AnnotationAssertion(rdfs:label dcterms:title "title")
 # Class: <http://purl.obolibrary.org/obo/CAMO_0000000> (root node)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CAMO_0000000> "root node"@en)
+
+# Class: <http://purl.obolibrary.org/obo/CAMO_0000001> (Research Family Type)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CAMO_0000001> "Research Family Type"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/CAMO_0000001> <http://purl.obolibrary.org/obo/CAMO_0000000>)
+
+# Class: <http://purl.obolibrary.org/obo/CAMO_0000002> (Parent(s) and Child(ren))
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CAMO_0000002> "Parent(s) and Child(ren)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/CAMO_0000002> <http://purl.obolibrary.org/obo/CAMO_0000001>)
+
+# Class: <http://purl.obolibrary.org/obo/CAMO_0000003> (Duo)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CAMO_0000003> "Duo"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/CAMO_0000003> <http://purl.obolibrary.org/obo/CAMO_0000002>)
+
+# Class: <http://purl.obolibrary.org/obo/CAMO_0000004> (Trio)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CAMO_0000004> "Trio"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/CAMO_0000004> <http://purl.obolibrary.org/obo/CAMO_0000003>)
+
+# Class: <http://purl.obolibrary.org/obo/CAMO_0000005> (Trio+)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CAMO_0000005> "Trio+"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/CAMO_0000005> <http://purl.obolibrary.org/obo/CAMO_0000004>)
+
+# Class: <http://purl.obolibrary.org/obo/CAMO_0000006> (Case Only)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CAMO_0000006> "Case Only"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/CAMO_0000006> <http://purl.obolibrary.org/obo/CAMO_0000001>)
+
+# Class: <http://purl.obolibrary.org/obo/CAMO_0000007> (Proband Only)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CAMO_0000007> "Proband Only"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/CAMO_0000007> <http://purl.obolibrary.org/obo/CAMO_0000006>)
+
+# Class: <http://purl.obolibrary.org/obo/CAMO_0000008> (Control Only)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CAMO_0000008> "Control Only"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/CAMO_0000008> <http://purl.obolibrary.org/obo/CAMO_0000001>)
+
+# Class: <http://purl.obolibrary.org/obo/CAMO_0000009> (Data Source)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CAMO_0000009> "Data Source"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/CAMO_0000009> <http://purl.obolibrary.org/obo/CAMO_0000000>)
+
+# Class: <http://purl.obolibrary.org/obo/CAMO_0000010> (Survey)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CAMO_0000010> "Survey"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/CAMO_0000010> <http://purl.obolibrary.org/obo/CAMO_0000009>)
+
+# Class: <http://purl.obolibrary.org/obo/CAMO_0000011> (Research Assessment)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CAMO_0000011> "Research Assessment"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/CAMO_0000011> <http://purl.obolibrary.org/obo/CAMO_0000009>)
+
+# Class: <http://purl.obolibrary.org/obo/CAMO_0000012> (Interview)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CAMO_0000012> "Interview"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/CAMO_0000012> <http://purl.obolibrary.org/obo/CAMO_0000011>)
+
+# Class: <http://purl.obolibrary.org/obo/CAMO_0000013> (Physical Examination)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CAMO_0000013> "Physical Examination"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/CAMO_0000013> <http://purl.obolibrary.org/obo/CAMO_0000011>)
+
+# Class: <http://purl.obolibrary.org/obo/CAMO_0000014> (Electronic Health Record)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CAMO_0000014> "Electronic Health Record"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/CAMO_0000014> <http://purl.obolibrary.org/obo/CAMO_0000009>)
+
+# Class: <http://purl.obolibrary.org/obo/CAMO_0000015> (Asserter)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CAMO_0000015> "Asserter"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/CAMO_0000015> <http://purl.obolibrary.org/obo/CAMO_0000000>)
+
+# Class: <http://purl.obolibrary.org/obo/CAMO_0000016> (Investigator Asserted)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CAMO_0000016> "Investigator Asserted"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/CAMO_0000016> <http://purl.obolibrary.org/obo/CAMO_0000015>)
+
+# Class: <http://purl.obolibrary.org/obo/CAMO_0000017> (Healthcare Asserted)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CAMO_0000017> "Healthcare Asserted"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/CAMO_0000017> <http://purl.obolibrary.org/obo/CAMO_0000015>)
+
+# Class: <http://purl.obolibrary.org/obo/CAMO_0000018> (Participant or Representative Asserted)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CAMO_0000018> "Participant or Representative Asserted"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/CAMO_0000018> <http://purl.obolibrary.org/obo/CAMO_0000015>)
+
+# Class: <http://purl.obolibrary.org/obo/CAMO_0000019> (Participant Asserted)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CAMO_0000019> "Participant Asserted"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/CAMO_0000019> <http://purl.obolibrary.org/obo/CAMO_0000018>)
+
+# Class: <http://purl.obolibrary.org/obo/CAMO_0000020> (Representative Asserted)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CAMO_0000020> "Representative Asserted"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/CAMO_0000020> <http://purl.obolibrary.org/obo/CAMO_0000018>)
+
+# Class: <http://purl.obolibrary.org/obo/CAMO_0000021> (Caregiver Asserted)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CAMO_0000021> "Caregiver Asserted"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/CAMO_0000021> <http://purl.obolibrary.org/obo/CAMO_0000020>)
+
+# Class: <http://purl.obolibrary.org/obo/CAMO_0000022> (ETag)
+
+AnnotationAssertion(dcterms:description <http://purl.obolibrary.org/obo/CAMO_0000022> "The entity tag is a hash of the object. The ETag reflects changes only to the contents of an object, not its metadata. The ETag may or may not be an MD5 digest of the object data.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CAMO_0000022> "ETag"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/CAMO_0000022> <http://purl.obolibrary.org/obo/MS_1000561>)
+
+# Class: <http://purl.obolibrary.org/obo/MS_1000561> (<http://purl.obolibrary.org/obo/MS_1000561>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/MS_1000561> <http://purl.obolibrary.org/obo/CAMO_0000000>)
+
+# Class: <http://purl.obolibrary.org/obo/MS_1000568> (<http://purl.obolibrary.org/obo/MS_1000568>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/MS_1000568> <http://purl.obolibrary.org/obo/MS_1000561>)
+
+# Class: <http://purl.obolibrary.org/obo/MS_1000569> (<http://purl.obolibrary.org/obo/MS_1000569>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/MS_1000569> <http://purl.obolibrary.org/obo/MS_1000561>)
+
+# Class: <http://purl.obolibrary.org/obo/MS_1003151> (<http://purl.obolibrary.org/obo/MS_1003151>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/MS_1003151> <http://purl.obolibrary.org/obo/MS_1000561>)
 
 
 )
