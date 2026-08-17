@@ -1,0 +1,24 @@
+id: camo
+title: Common Access Model Ontology
+description: Organized terms in support of a shared data model.
+contact: robert.carroll@vumc.org
+github_org: include-dcc
+repo: camo
+git_user: Robert Carroll
+git_email: Robert.Carroll@vumc.org
+git_main_branch: main
+release_artefacts: 
+  - base
+  - full
+  - simple
+primary_release: full
+export_formats:
+  - owl
+  - obo
+  - json
+import_group:
+  products:
+    - id: ms
+robot_java_args: '-Xmx8G'
+documentation:
+  documentation_system: mkdocs
