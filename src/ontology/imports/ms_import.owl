@@ -11,14 +11,9 @@ Ontology(<http://purl.obolibrary.org/obo/camo/imports/ms_import.owl>
 Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/ms/4.1.257/ms.owl>)
 Annotation(owl:versionInfo "2026-08-17")
 
-Declaration(Class(<http://purl.obolibrary.org/obo/MS_0000000>))
-Declaration(Class(<http://purl.obolibrary.org/obo/MS_1000442>))
-Declaration(Class(<http://purl.obolibrary.org/obo/MS_1000499>))
 Declaration(Class(<http://purl.obolibrary.org/obo/MS_1000561>))
 Declaration(Class(<http://purl.obolibrary.org/obo/MS_1000568>))
 Declaration(Class(<http://purl.obolibrary.org/obo/MS_1000569>))
-Declaration(Class(<http://purl.obolibrary.org/obo/MS_1000577>))
-Declaration(Class(<http://purl.obolibrary.org/obo/MS_1001458>))
 Declaration(Class(<http://purl.obolibrary.org/obo/MS_1003151>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000050>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/ms#has_value_type>))
@@ -45,24 +40,9 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ms#has_value_type
 #   Classes
 ############################
 
-# Class: <http://purl.obolibrary.org/obo/MS_0000000> (Proteomics Standards Initiative Mass Spectrometry Vocabularies)
-
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/MS_0000000> "Proteomics Standards Initiative Mass Spectrometry Vocabularies")
-
-# Class: <http://purl.obolibrary.org/obo/MS_1000442> (spectrum)
-
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/MS_1000442> "spectrum")
-SubClassOf(<http://purl.obolibrary.org/obo/MS_1000442> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/MS_1001458>))
-
-# Class: <http://purl.obolibrary.org/obo/MS_1000499> (spectrum attribute)
-
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/MS_1000499> "spectrum attribute")
-SubClassOf(<http://purl.obolibrary.org/obo/MS_1000499> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/MS_1000442>))
-
 # Class: <http://purl.obolibrary.org/obo/MS_1000561> (data file checksum type)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/MS_1000561> "data file checksum type")
-SubClassOf(<http://purl.obolibrary.org/obo/MS_1000561> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/MS_1000577>))
 
 # Class: <http://purl.obolibrary.org/obo/MS_1000568> (MD5)
 
@@ -73,17 +53,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/MS_1000568> <http://purl.obolibrary.o
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/MS_1000569> "SHA-1")
 SubClassOf(<http://purl.obolibrary.org/obo/MS_1000569> <http://purl.obolibrary.org/obo/MS_1000561>)
-
-# Class: <http://purl.obolibrary.org/obo/MS_1000577> (source data file)
-
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/MS_1000577> "source data file")
-SubClassOf(<http://purl.obolibrary.org/obo/MS_1000577> <http://purl.obolibrary.org/obo/MS_1000499>)
-SubClassOf(<http://purl.obolibrary.org/obo/MS_1000577> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/MS_1001458>))
-
-# Class: <http://purl.obolibrary.org/obo/MS_1001458> (spectrum generation information)
-
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/MS_1001458> "spectrum generation information")
-SubClassOf(<http://purl.obolibrary.org/obo/MS_1001458> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/MS_0000000>))
 
 # Class: <http://purl.obolibrary.org/obo/MS_1003151> (SHA-256)
 

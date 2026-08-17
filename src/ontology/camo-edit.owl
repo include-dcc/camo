@@ -70,28 +70,33 @@ AnnotationAssertion(rdfs:label dcterms:title "title")
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CAMO_0000000> "root node"@en)
 
-# Class: <http://purl.obolibrary.org/obo/CAMO_0000001> (Research Family Type)
+# Class: <http://purl.obolibrary.org/obo/CAMO_0000001> (Family Study Type)
 
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CAMO_0000001> "Research Family Type"@en)
+AnnotationAssertion(dcterms:description <http://purl.obolibrary.org/obo/CAMO_0000001> "Types of \"Family Studies\" that a given group of related individuals may represent.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CAMO_0000001> "Family Study Type"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/CAMO_0000001> <http://purl.obolibrary.org/obo/CAMO_0000000>)
 
 # Class: <http://purl.obolibrary.org/obo/CAMO_0000002> (Parent(s) and Child(ren))
 
+AnnotationAssertion(dcterms:description <http://purl.obolibrary.org/obo/CAMO_0000002> "This family study includes at a minimum one parent and one child.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CAMO_0000002> "Parent(s) and Child(ren)"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/CAMO_0000002> <http://purl.obolibrary.org/obo/CAMO_0000001>)
 
 # Class: <http://purl.obolibrary.org/obo/CAMO_0000003> (Duo)
 
+AnnotationAssertion(dcterms:description <http://purl.obolibrary.org/obo/CAMO_0000003> "This family study includes at a minimum one parent and one affected child.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CAMO_0000003> "Duo"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/CAMO_0000003> <http://purl.obolibrary.org/obo/CAMO_0000002>)
 
 # Class: <http://purl.obolibrary.org/obo/CAMO_0000004> (Trio)
 
+AnnotationAssertion(dcterms:description <http://purl.obolibrary.org/obo/CAMO_0000004> "This family study includes at a minimum two parents of one affected child.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CAMO_0000004> "Trio"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/CAMO_0000004> <http://purl.obolibrary.org/obo/CAMO_0000003>)
 
 # Class: <http://purl.obolibrary.org/obo/CAMO_0000005> (Trio+)
 
+AnnotationAssertion(dcterms:description <http://purl.obolibrary.org/obo/CAMO_0000005> "This family study includes at a minimum two parents of one affected child and at least one other child.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CAMO_0000005> "Trio+"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/CAMO_0000005> <http://purl.obolibrary.org/obo/CAMO_0000004>)
 
@@ -181,19 +186,19 @@ AnnotationAssertion(dcterms:description <http://purl.obolibrary.org/obo/CAMO_000
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CAMO_0000022> "ETag"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/CAMO_0000022> <http://purl.obolibrary.org/obo/MS_1000561>)
 
-# Class: <http://purl.obolibrary.org/obo/MS_1000561> (<http://purl.obolibrary.org/obo/MS_1000561>)
+# Class: <http://purl.obolibrary.org/obo/MS_1000561> (data file checksum type)
 
 SubClassOf(<http://purl.obolibrary.org/obo/MS_1000561> <http://purl.obolibrary.org/obo/CAMO_0000000>)
 
-# Class: <http://purl.obolibrary.org/obo/MS_1000568> (<http://purl.obolibrary.org/obo/MS_1000568>)
+# Class: <http://purl.obolibrary.org/obo/MS_1000568> (MD5)
 
 SubClassOf(<http://purl.obolibrary.org/obo/MS_1000568> <http://purl.obolibrary.org/obo/MS_1000561>)
 
-# Class: <http://purl.obolibrary.org/obo/MS_1000569> (<http://purl.obolibrary.org/obo/MS_1000569>)
+# Class: <http://purl.obolibrary.org/obo/MS_1000569> (SHA-1)
 
 SubClassOf(<http://purl.obolibrary.org/obo/MS_1000569> <http://purl.obolibrary.org/obo/MS_1000561>)
 
-# Class: <http://purl.obolibrary.org/obo/MS_1003151> (<http://purl.obolibrary.org/obo/MS_1003151>)
+# Class: <http://purl.obolibrary.org/obo/MS_1003151> (SHA-256)
 
 SubClassOf(<http://purl.obolibrary.org/obo/MS_1003151> <http://purl.obolibrary.org/obo/MS_1000561>)
 
