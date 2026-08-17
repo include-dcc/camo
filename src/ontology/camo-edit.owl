@@ -37,6 +37,12 @@ Declaration(Class(<http://purl.obolibrary.org/obo/CAMO_0000019>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CAMO_0000020>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CAMO_0000021>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CAMO_0000022>))
+Declaration(Class(<http://purl.obolibrary.org/obo/CAMO_0000023>))
+Declaration(Class(<http://purl.obolibrary.org/obo/CAMO_0000024>))
+Declaration(Class(<http://purl.obolibrary.org/obo/CAMO_0000025>))
+Declaration(Class(<http://purl.obolibrary.org/obo/CAMO_0000026>))
+Declaration(Class(<http://purl.obolibrary.org/obo/CAMO_0000027>))
+Declaration(Class(<http://purl.obolibrary.org/obo/CAMO_0000028>))
 Declaration(Class(<http://purl.obolibrary.org/obo/MS_1000561>))
 Declaration(Class(<http://purl.obolibrary.org/obo/MS_1000568>))
 Declaration(Class(<http://purl.obolibrary.org/obo/MS_1000569>))
@@ -185,6 +191,38 @@ SubClassOf(<http://purl.obolibrary.org/obo/CAMO_0000021> <http://purl.obolibrary
 AnnotationAssertion(dcterms:description <http://purl.obolibrary.org/obo/CAMO_0000022> "The entity tag is a hash of the object. The ETag reflects changes only to the contents of an object, not its metadata. The ETag may or may not be an MD5 digest of the object data.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CAMO_0000022> "ETag"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/CAMO_0000022> <http://purl.obolibrary.org/obo/MS_1000561>)
+
+# Class: <http://purl.obolibrary.org/obo/CAMO_0000023> (Subject Type)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CAMO_0000023> "Subject Type"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/CAMO_0000023> <http://purl.obolibrary.org/obo/CAMO_0000000>)
+
+# Class: <http://purl.obolibrary.org/obo/CAMO_0000024> (Participant)
+
+AnnotationAssertion(dcterms:description <http://purl.obolibrary.org/obo/CAMO_0000024> "Study participant with consent, assent, or waiver of consent.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CAMO_0000024> "Participant"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/CAMO_0000024> <http://purl.obolibrary.org/obo/CAMO_0000023>)
+
+# Class: <http://purl.obolibrary.org/obo/CAMO_0000025> (Non-Participant)
+
+AnnotationAssertion(dcterms:description <http://purl.obolibrary.org/obo/CAMO_0000025> "An individual not directly participating in a study, eg, the subject of a reported family history.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CAMO_0000025> "Non-Participant"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/CAMO_0000025> <http://purl.obolibrary.org/obo/CAMO_0000023>)
+
+# Class: <http://purl.obolibrary.org/obo/CAMO_0000026> (Cell Line)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CAMO_0000026> "Cell Line"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/CAMO_0000026> <http://purl.obolibrary.org/obo/CAMO_0000000>)
+
+# Class: <http://purl.obolibrary.org/obo/CAMO_0000027> (Animal Model)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CAMO_0000027> "Animal Model"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/CAMO_0000027> <http://purl.obolibrary.org/obo/CAMO_0000000>)
+
+# Class: <http://purl.obolibrary.org/obo/CAMO_0000028> (Group)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CAMO_0000028> "Group"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/CAMO_0000028> <http://purl.obolibrary.org/obo/CAMO_0000000>)
 
 # Class: <http://purl.obolibrary.org/obo/MS_1000561> (data file checksum type)
 
