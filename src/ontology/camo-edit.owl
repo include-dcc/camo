@@ -128,26 +128,31 @@ SubClassOf(<http://purl.obolibrary.org/obo/CAMO_0000009> <http://purl.obolibrary
 
 # Class: <http://purl.obolibrary.org/obo/CAMO_0000010> (Survey)
 
+AnnotationAssertion(dcterms:description <http://purl.obolibrary.org/obo/CAMO_0000010> "Data obtained from a survey or questionnaire given to a participant or their representative.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CAMO_0000010> "Survey"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/CAMO_0000010> <http://purl.obolibrary.org/obo/CAMO_0000009>)
 
 # Class: <http://purl.obolibrary.org/obo/CAMO_0000011> (Research Assessment)
 
+AnnotationAssertion(dcterms:description <http://purl.obolibrary.org/obo/CAMO_0000011> "Data obtained by research staff for the study.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CAMO_0000011> "Research Assessment"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/CAMO_0000011> <http://purl.obolibrary.org/obo/CAMO_0000009>)
 
 # Class: <http://purl.obolibrary.org/obo/CAMO_0000012> (Interview)
 
+AnnotationAssertion(dcterms:description <http://purl.obolibrary.org/obo/CAMO_0000012> "Data obtained directly by research staff examining the participant.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CAMO_0000012> "Interview"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/CAMO_0000012> <http://purl.obolibrary.org/obo/CAMO_0000011>)
 
 # Class: <http://purl.obolibrary.org/obo/CAMO_0000013> (Physical Examination)
 
+AnnotationAssertion(dcterms:description <http://purl.obolibrary.org/obo/CAMO_0000013> "Data obtained by research staff interviewing participants, representatives, or others.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CAMO_0000013> "Physical Examination"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/CAMO_0000013> <http://purl.obolibrary.org/obo/CAMO_0000011>)
 
 # Class: <http://purl.obolibrary.org/obo/CAMO_0000014> (Electronic Health Record)
 
+AnnotationAssertion(dcterms:description <http://purl.obolibrary.org/obo/CAMO_0000014> "Data obtained directly from an Electronic Health Record.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CAMO_0000014> "Electronic Health Record"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/CAMO_0000014> <http://purl.obolibrary.org/obo/CAMO_0000009>)
 
@@ -156,33 +161,39 @@ SubClassOf(<http://purl.obolibrary.org/obo/CAMO_0000014> <http://purl.obolibrary
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CAMO_0000015> "Asserter"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/CAMO_0000015> <http://purl.obolibrary.org/obo/CAMO_0000000>)
 
-# Class: <http://purl.obolibrary.org/obo/CAMO_0000016> (Investigator Asserted)
+# Class: <http://purl.obolibrary.org/obo/CAMO_0000016> (Research Staff Asserted)
 
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CAMO_0000016> "Investigator Asserted"@en)
+AnnotationAssertion(dcterms:description <http://purl.obolibrary.org/obo/CAMO_0000016> "Assertion made by research staff.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CAMO_0000016> "Research Staff Asserted"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/CAMO_0000016> <http://purl.obolibrary.org/obo/CAMO_0000015>)
 
 # Class: <http://purl.obolibrary.org/obo/CAMO_0000017> (Healthcare Asserted)
 
+AnnotationAssertion(dcterms:description <http://purl.obolibrary.org/obo/CAMO_0000017> "Assertion documented by a healthcare system or provider.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CAMO_0000017> "Healthcare Asserted"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/CAMO_0000017> <http://purl.obolibrary.org/obo/CAMO_0000015>)
 
 # Class: <http://purl.obolibrary.org/obo/CAMO_0000018> (Participant or Representative Asserted)
 
+AnnotationAssertion(dcterms:description <http://purl.obolibrary.org/obo/CAMO_0000018> "Assertion made by a study participant, their representative, or some combination.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CAMO_0000018> "Participant or Representative Asserted"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/CAMO_0000018> <http://purl.obolibrary.org/obo/CAMO_0000015>)
 
 # Class: <http://purl.obolibrary.org/obo/CAMO_0000019> (Participant Asserted)
 
+AnnotationAssertion(dcterms:description <http://purl.obolibrary.org/obo/CAMO_0000019> "Assertion made by a study participant.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CAMO_0000019> "Participant Asserted"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/CAMO_0000019> <http://purl.obolibrary.org/obo/CAMO_0000018>)
 
 # Class: <http://purl.obolibrary.org/obo/CAMO_0000020> (Representative Asserted)
 
+AnnotationAssertion(dcterms:description <http://purl.obolibrary.org/obo/CAMO_0000020> "Assertion made by a study participant's representative or representatives.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CAMO_0000020> "Representative Asserted"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/CAMO_0000020> <http://purl.obolibrary.org/obo/CAMO_0000018>)
 
 # Class: <http://purl.obolibrary.org/obo/CAMO_0000021> (Caregiver Asserted)
 
+AnnotationAssertion(dcterms:description <http://purl.obolibrary.org/obo/CAMO_0000021> "Assertion made by a study participant's caregiver or caregivers.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CAMO_0000021> "Caregiver Asserted"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/CAMO_0000021> <http://purl.obolibrary.org/obo/CAMO_0000020>)
 
@@ -221,6 +232,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/CAMO_0000027> <http://purl.obolibrary
 
 # Class: <http://purl.obolibrary.org/obo/CAMO_0000028> (Group)
 
+AnnotationAssertion(dcterms:description <http://purl.obolibrary.org/obo/CAMO_0000028> "A group of entities or things being assessed as a whole.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CAMO_0000028> "Group"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/CAMO_0000028> <http://purl.obolibrary.org/obo/CAMO_0000023>)
 

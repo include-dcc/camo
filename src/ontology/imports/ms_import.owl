@@ -7,9 +7,9 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/camo/imports/ms_import.owl>
-<http://purl.obolibrary.org/obo/camo/releases/2026-08-17/imports/ms_import.owl>
+<http://purl.obolibrary.org/obo/camo/releases/2026-08-18/imports/ms_import.owl>
 Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/ms/4.1.257/ms.owl>)
-Annotation(owl:versionInfo "2026-08-17")
+Annotation(owl:versionInfo "2026-08-18")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/MS_1000561>))
 Declaration(Class(<http://purl.obolibrary.org/obo/MS_1000568>))
