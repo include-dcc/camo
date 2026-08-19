@@ -24,9 +24,18 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v4
       # Get date for the release
-      - name: Get current date
+      - name: Get proposed tag
         id: date
-        run: echo "DATE_VAR=$(date +'%Y-%m-%d')" >> "$GITHUB_OUTPUT"
+        run: echo "TAG=v$(date +'%Y-%m-%d')" >> "$GITHUB_OUTPUT"
+      # Fail out if the release exists and is published
+      - uses: mukunku/release-exists-action@v1.1.0
+        id: check_release
+        with:
+          tag: ${{ steps.date.outputs.TAG }}
+      - name: Check for existing, published release
+        id: assert_no_published_release
+        run: exit 1
+        if: steps.check_release.outputs.exists == 'true' && steps.check_release.outputs.draft == 'false'
       # Run the release file generation
       - name: Update release files
         run: cd src/ontology/ && make ROBOT_ENV='ROBOT_JAVA_ARGS=-Xmx6G' GITHUB_ACTION=true prepare_release_fast -B
@@ -36,7 +45,7 @@ jobs:
         with:
           generate_release_notes: true
           draft: true
-          tag_name: v${{ steps.date.outputs.DATE_VAR }}
+          tag_name: ${{ steps.date.outputs.TAG }}
           files: |
             camo.owl
             camo.obo
