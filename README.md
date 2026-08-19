@@ -4,7 +4,7 @@
 
 Description: Organized terms in support of a shared data model.
 
-More information can be found at http://obofoundry.org/ontology/camo
+More information can be found at [the Common Access Model](https://include-dcc.github.io/common-access-model/)
 
 ## Versions
 
@@ -12,9 +12,7 @@ More information can be found at http://obofoundry.org/ontology/camo
 
 The latest version of the ontology can always be found at:
 
-http://purl.obolibrary.org/obo/camo.owl
-
-(note this will not show up until the request has been approved by obofoundry.org)
+Release URI TBD
 
 ### Editors' version
 
