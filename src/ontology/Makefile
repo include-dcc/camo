@@ -10,7 +10,7 @@
 # More information: https://github.com/INCATools/ontology-development-kit/
 
 # Fingerprint of the configuration file when this Makefile was last generated
-CONFIG_HASH=                22b896ff37a2178cf683be4df092a84aca4cad6aac001f4a85792c7351452992
+CONFIG_HASH=                bfc9223094875f6270fa84b7327623c74b217980c60850a5c0942756ce12dfe9
 
 
 # ----------------------------------------
@@ -416,6 +416,25 @@ $(IMPORTDIR)/%_import.owl: $(MIRRORDIR)/%.owl $(IMPORTDIR)/%_terms.txt \
 		 $(ANNOTATE_CONVERT_FILE)
 
 .PRECIOUS: $(IMPORTDIR)/%_import.owl
+
+## Module for ontology: ms (slme)
+$(IMPORTDIR)/ms_import.owl: $(MIRRORDIR)/ms.owl $(IMPORTDIR)/ms_terms.txt $(IMPORTSEED) | all_robot_plugins
+	$(ROBOT) annotate --input $< --remove-annotations \
+		 odk:normalize --add-source true \
+		 extract --term-file $(IMPORTDIR)/ms_terms.txt $(T_IMPORTSEED) \
+		         --copy-ontology-annotations true --force true \
+		         --individuals include \
+		         --method STAR \
+		 remove $(foreach p, $(ANNOTATION_PROPERTIES), --term $(p)) \
+		        --term rdfs:label \
+		        --term IAO:0000115 \
+		        --term OMO:0002000 \
+		        --term-file $(IMPORTDIR)/ms_terms.txt $(T_IMPORTSEED) \
+		        --select complement --select annotation-properties \
+		 odk:normalize --base-iri http://purl.obolibrary.org/obo \
+		               --subset-decls true --synonym-decls true \
+		 repair --merge-axiom-annotations true \
+		 $(ANNOTATE_CONVERT_FILE)
 
 endif # IMP=true
 
