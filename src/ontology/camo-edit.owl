@@ -43,6 +43,9 @@ Declaration(Class(<http://purl.obolibrary.org/obo/CAMO_0000025>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CAMO_0000026>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CAMO_0000027>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CAMO_0000028>))
+Declaration(Class(<http://purl.obolibrary.org/obo/CAMO_0000029>))
+Declaration(Class(<http://purl.obolibrary.org/obo/CAMO_0000030>))
+Declaration(Class(<http://purl.obolibrary.org/obo/CAMO_0000031>))
 Declaration(Class(<http://purl.obolibrary.org/obo/MS_1000561>))
 Declaration(Class(<http://purl.obolibrary.org/obo/MS_1000568>))
 Declaration(Class(<http://purl.obolibrary.org/obo/MS_1000569>))
@@ -235,6 +238,23 @@ SubClassOf(<http://purl.obolibrary.org/obo/CAMO_0000027> <http://purl.obolibrary
 AnnotationAssertion(dcterms:description <http://purl.obolibrary.org/obo/CAMO_0000028> "A group of entities or things being assessed as a whole.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CAMO_0000028> "Group"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/CAMO_0000028> <http://purl.obolibrary.org/obo/CAMO_0000023>)
+
+# Class: <http://purl.obolibrary.org/obo/CAMO_0000029> (Sequencing Mode)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CAMO_0000029> "Sequencing Mode"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/CAMO_0000029> <http://purl.obolibrary.org/obo/CAMO_0000000>)
+
+# Class: <http://purl.obolibrary.org/obo/CAMO_0000030> (Circular Consensus Sequencing (CCS))
+
+AnnotationAssertion(dcterms:description <http://purl.obolibrary.org/obo/CAMO_0000030> "Multi-pass reads of libraries with shorter DNA inserts (10kb-30kb).")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CAMO_0000030> "Circular Consensus Sequencing (CCS)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/CAMO_0000030> <http://purl.obolibrary.org/obo/CAMO_0000029>)
+
+# Class: <http://purl.obolibrary.org/obo/CAMO_0000031> (Continuous Long Reads Sequencing (CLR))
+
+AnnotationAssertion(dcterms:description <http://purl.obolibrary.org/obo/CAMO_0000031> "Typically single-pass reads of libraries with long DNA inserts (>30kb in length).")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CAMO_0000031> "Continuous Long Reads Sequencing (CLR)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/CAMO_0000031> <http://purl.obolibrary.org/obo/CAMO_0000029>)
 
 # Class: <http://purl.obolibrary.org/obo/MS_1000561> (data file checksum type)
 
